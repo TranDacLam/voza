@@ -1,0 +1,69 @@
+.home-page{
+    .navbar{
+        background-color: $background-color;
+        padding: 0;
+        &-nav{
+            width: 100%;
+            .nav-item{
+                flex: 1;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+            }
+            .nav-menu-sub{
+                max-height: 0;
+                overflow: hidden;
+                transition: max-height .3s ease-in-out;
+            }
+            .nav-link{
+                color: $white-color;
+                font-weight: 600;
+                text-transform: uppercase;
+                display: flex;
+                align-items: center;
+                flex-direction: column;
+                &:hover{
+                    color: $white-color;
+                    & + div{
+                        max-height: 100%;
+                    }
+                }
+                img{
+                    margin-bottom: 12px;
+                }
+            }
+        }
+        &-brand{
+            padding: 18px 30px;
+            background: #fff;
+            margin-right: 0;
+            margin-bottom: -20px;
+            img{
+                width: 120px;
+                max-width: unset;
+            }
+        }
+        &:before{
+            content: '';
+            position: absolute;
+            height: 10px;
+            background-image: linear-gradient(to right, #005869 0%, #d81e24 100%);
+            left: 0;
+            right: 0;
+            top: 0;
+            z-index: -1;
+        }
+    }
+
+    section{
+        position: relative;
+        background-color: $background-color;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+    }
+
+    .header{
+        background-color: $white-color;
+    }
+}

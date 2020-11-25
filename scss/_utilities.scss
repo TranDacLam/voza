@@ -1,0 +1,72 @@
+.white-color{
+    color: $white-color;
+}
+
+@for $i from 0 through 300{
+    .m-l-#{$i}{
+        margin-left:#{$i}px !important;
+    }
+    .m-t-#{$i}{
+        margin-top:#{$i}px !important;
+    }
+    .m-r-#{$i}{
+        margin-right:#{$i}px !important;
+    }
+    .m-b-#{$i}{
+        margin-bottom:#{$i}px !important;
+    }
+    .m-all-#{$i}{
+        margin:#{$i}px !important;
+    }
+    .p-l-#{$i}{
+        padding-left:#{$i}px !important;
+    }
+    .p-t-#{$i}{
+        padding-top:#{$i}px !important;
+    }
+    .p-r-#{$i}{
+        padding-right:#{$i}px !important;
+    }
+    .p-b-#{$i}{
+        padding-bottom:#{$i}px !important;
+    }
+    .p-all-#{$i}{
+        padding:#{$i}px !important;
+    }
+    .min-w-#{$i}{
+        min-width:#{$i}px !important;
+    }
+    .min-h-#{$i}{
+        min-height:#{$i}px !important;
+    }
+    .max-w-#{$i}{
+        max-width:#{$i}px !important;
+    }
+    .max-h-#{$i}{
+        max-height:#{$i}px !important;
+    }
+}
+
+@for $i from 1 through 50{
+    .fz-#{$i}{
+        font-size: #{$i}px !important;
+    }
+}
+
+$fweights: 100, 200, 300, 400, 500, 600, 700, 800, 900;
+@each $fweight in $fweights {
+  .fw-#{$fweight} {
+    font-weight: #{$fweight}!important;
+  }
+}
+
+@for $i from 1 through 10{
+    .text-overflow-#{$i} {
+        display: block;
+        display: -webkit-box;
+        -webkit-box-orient: vertical;
+        -webkit-line-clamp: #{$i};
+        overflow: hidden;
+        text-overflow: ellipsis;
+    }
+}
