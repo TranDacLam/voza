@@ -4,16 +4,22 @@
         padding: 0;
         &-nav{
             width: 100%;
+            .nav-menu-sub{
+                overflow: hidden;
+                transition: max-height .3s ease-in-out;
+                position: absolute;
+                top: 100%;
+                display: none;
+                li{
+                    color: #333333;
+                }
+            }
             .nav-item{
                 flex: 1;
                 display: flex;
                 align-items: center;
                 justify-content: center;
-            }
-            .nav-menu-sub{
-                max-height: 0;
-                overflow: hidden;
-                transition: max-height .3s ease-in-out;
+                position: relative;
             }
             .nav-link{
                 color: $white-color;
@@ -24,9 +30,6 @@
                 flex-direction: column;
                 &:hover{
                     color: $white-color;
-                    & + div{
-                        max-height: 100%;
-                    }
                 }
                 img{
                     margin-bottom: 12px;
@@ -38,6 +41,8 @@
             background: #fff;
             margin-right: 0;
             margin-bottom: -20px;
+            box-shadow: 0 0 8px rgba(0, 0, 0, 0.2);
+            border-radius: 0 0 6px 6px;
             img{
                 width: 120px;
                 max-width: unset;
@@ -65,5 +70,6 @@
 
     .header{
         background-color: $white-color;
+        padding-top: 116px;
     }
 }
