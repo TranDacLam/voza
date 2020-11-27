@@ -249,4 +249,6 @@ $(function(){
 	$('.navbar-mobile-header__close').on('click', function() {
 		$('#navbarSupportedContent').toggleClass('show')
 	})
+
+	new WOW().init();
 })
