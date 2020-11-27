@@ -1,0 +1,32 @@
+.pagination{
+    margin-top: 20px;
+    .page-item{
+        .page-link{
+            width: 35px;
+            height: 35px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-weight: 700;
+            color: #0091ae;
+            border: 1px solid #0091ae;
+            border-radius: 5px;  
+        }
+        &.active, &:hover{
+            .page-link{ 
+                background-image: linear-gradient(to right, #0091ae 0%, #00768e 100%);
+                color: $white-color;
+            }
+        }
+        &.dots{
+            color: #0091ae;
+            font-weight: 700;
+            margin-top: 8px;
+            padding: 0 5px;
+        }
+        &:not(:last-child){
+            margin-right:15px;
+        }
+    }
+    
+}

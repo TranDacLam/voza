@@ -14,18 +14,38 @@
 <body>
 	<div class="home-page"> 
 		<!-- fixed-top -->
-		<nav class="navbar navbar-expand-lg navbar-light fixed-top" id="home-nav"> 
+		<nav class="navbar navbar-expand-lg navbar-dark fixed-top" id="home-nav"> 
 			<div class="container">
 				<button class="navbar-toggler collapsed" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
 					<span class="navbar-toggler-icon"></span>
 				</button>
-
 				<div class="collapse navbar-collapse " id="navbarSupportedContent">
+					<div class="d-lg-none navbar-mobile-header">
+						<div class="navbar-mobile-header__top">
+							<a class="" href="">
+								<img src="images/logo.png" alt="Voza" />
+							</a>
+							<div class="navbar-mobile-header__close">
+								<svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-x" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+									<path fill-rule="evenodd" d="M4.646 4.646a.5.5 0 0 1 .708 0L8 7.293l2.646-2.647a.5.5 0 0 1 .708.708L8.707 8l2.647 2.646a.5.5 0 0 1-.708.708L8 8.707l-2.646 2.647a.5.5 0 0 1-.708-.708L7.293 8 4.646 5.354a.5.5 0 0 1 0-.708z"/>
+								</svg>
+								<span>đóng</span>
+							</div>
+						</div>
+						<div class="navbar-mobile-header__search">
+							<input type="text" class="form-control" placeholder="Tìm kiếm..." id="search">
+						</div>
+					</div>
 					<ul class="navbar-nav" id="navbar-menu">
 						<li class="nav-item">
 							<a class="nav-link" href="#section0">
 								<img src="images/information.png" />
 								Giới thiệu
+								<span class="d-lg-none">
+									<svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-chevron-right" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+										<path fill-rule="evenodd" d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z"/>
+									</svg>
+								</span>
 							</a>
 							<div class="navbar-menu-sub">
 								<div class="navbar-menu-sub__content">
@@ -50,7 +70,30 @@
 							<a class="nav-link"  href="#section1">
 								<img src="images/herbal.png" />
 								dịch vụ làm đẹp
+								<span class="d-lg-none">
+									<svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-chevron-right" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+										<path fill-rule="evenodd" d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z"/>
+									</svg>
+								</span>
 							</a>
+							<div class="navbar-menu-sub">
+								<div class="navbar-menu-sub__content">
+									<ul>
+										<li class=""><a href="#">Về thẩm mỹ viện Voza</a></li>
+										<li class=""><a href="#">Hệ thống cơ sở vật chất</a></li>
+										<li class=""><a href="#">Đội ngũ KTV chuyên nghiệp</a></li>
+									</ul>
+									<ul>
+										<li class=""><a href="#">Về thẩm mỹ viện Voza</a></li>
+										<li class=""><a href="#">Hệ thống cơ sở vật chất</a></li>
+										<li class=""><a href="#">Đội ngũ KTV chuyên nghiệp</a></li>
+									</ul>
+								</div>
+								<div class="navbar-menu-sub__image">
+									<img src="images/sub-menu-gioi-thieu.png" />
+								</div>
+							</div>
+							<div class="navbar-menu-sub__arrow"></div>
 						</li>
 						<li class="nav-item">
 							<a class="nav-link" data-value="location" href="#section2">
@@ -58,7 +101,7 @@
 								tin tức & ưu đãi
 							</a>
 						</li>
-						<li class="nav-item">
+						<li class="nav-item d-none d-lg-block">
 							<a class="navbar-brand" href="">
 								<img src="images/logo.png" alt="Voza" />
 							</a>
@@ -67,7 +110,30 @@
 							<a class="nav-link " data-value="ground" href="#section5">
 								<img src="images/photo-album.png" />
 								hình ảnh & video
+								<span class="d-lg-none">
+									<svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-chevron-right" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+										<path fill-rule="evenodd" d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z"/>
+									</svg>
+								</span>
 							</a>
+							<div class="navbar-menu-sub">
+								<div class="navbar-menu-sub__content">
+									<ul>
+										<li class=""><a href="#">Về thẩm mỹ viện Voza</a></li>
+										<li class=""><a href="#">Hệ thống cơ sở vật chất</a></li>
+										<li class=""><a href="#">Đội ngũ KTV chuyên nghiệp</a></li>
+									</ul>
+									<ul>
+										<li class=""><a href="#">Về thẩm mỹ viện Voza</a></li>
+										<li class=""><a href="#">Hệ thống cơ sở vật chất</a></li>
+										<li class=""><a href="#">Đội ngũ KTV chuyên nghiệp</a></li>
+									</ul>
+								</div>
+								<div class="navbar-menu-sub__image">
+									<img src="images/sub-menu-gioi-thieu.png" />
+								</div>
+							</div>
+							<div class="navbar-menu-sub__arrow"></div>
 						</li>
 						<li class="nav-item">
 							<a class="nav-link " data-value="apartment" href="#section6">
@@ -83,13 +149,28 @@
 						</li>
 						</li>
 					</ul>
-					
+					<div class="d-lg-none navbar-mobile-footer">
+						<h6>Kết nối với chúng tôi</h6>
+						<div>
+							<a href="#" target="_blank"><img src="images/facebook.png" /></a>
+							<a href="#" target="_blank" class="m-l-16"><img src="images/youtube.png" /></a>
+							<a href="#" target="_blank" class="m-l-16"><img src="images/zalo-icon-11.png" /></a>
+						</div>
+					</div>
 				</div>
+
+				<a class="navbar-brand d-lg-none" href="">
+					<img src="images/logo.png" alt="Voza" />
+				</a>
+
+				<a class="navbar-noti d-lg-none" href="">
+					<img src="images/bell.png" alt="bell" />
+				</a>
 			</div>
 		</nav>
 
 		<section class="header">
-			<div class="header__slider">
+			<div class="header__slider d-none d-md-block">
 				<div class="swiper-header swiper-container">
 					<div class="swiper-wrapper">
 					  	<div class="swiper-slide">
@@ -102,24 +183,43 @@
 					<div class="swiper-header-pagination swiper-pagination"></div>
 				</div>
 			</div>
+			<div class="header__slider--mobile d-md-none">
+				<div class="swiper-header swiper-container">
+					<div class="swiper-wrapper">
+					  	<div class="swiper-slide">
+						  <img src="images/banner-mobile.png" />
+						</div>
+						<div class="swiper-slide">
+							<img src="images/banner-mobile.png" />
+						</div>
+					</div>
+					<div class="swiper-header-pagination swiper-pagination"></div>
+				</div>
+			</div>
 		</section>
 
 		<section class="best-service">
 			<div class="container">
 				<div class="best-service__header m-b-50">
-					<h4>DỊCH VỤ NỔI BẬT</h4>
+					<h4 class="title-section">DỊCH VỤ NỔI BẬT</h4>
 					<div class="d-flex justify-content-center align-items-center">
 						<div class="best-service__header-line--before"></div>
 						<p class="m-b-0">The Best For You</p>
 						<div class="best-service__header-line--after"></div>
 					</div>
 				</div>
-				<div class="best-service__content">
+				<div class="best-service__content d-none d-lg-block">
 					<div class="row m-b-20">
 						<div class="col-md-6">
 							<div class="best-service__item">
-								<img src="images/service-1.png" />
-								<a class="best-service__view-detail">
+								<div class="best-service__image">
+									<img src="images/service-1.png" />
+									<div class="best-service__info">
+										<img src="images/best-service-icon.png" />
+										<h6>ĐIỀU TRỊ NÁM, TÀN NHANG CÔNG NGHỆ MELAS CELL</h6>
+									</div>
+								</div>
+								<a class="best-service__view-detail" href="#" target="_blank">
 									Xem chi tiết
 									<svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-arrow-right" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
 										<path fill-rule="evenodd" d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8z"/>
@@ -129,8 +229,14 @@
 						</div>
 						<div class="col-md-6">
 							<div class="best-service__item">
-								<img src="images/service-2.png" />
-								<a class="best-service__view-detail">
+								<div class="best-service__image">
+									<img src="images/service-2.png" />
+									<div class="best-service__info reverse">
+										<img src="images/best-service-icon.png" />
+										<h6>TẮM TRẮNG TOÀN THÂN CÔNG NGHỆ PERFECT WHITE PLUS</h6>
+									</div>
+								</div>
+								<a class="best-service__view-detail" href="#" target="_blank">
 									Xem chi tiết
 									<svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-arrow-right" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
 										<path fill-rule="evenodd" d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8z"/>
@@ -139,11 +245,19 @@
 							</div>
 						</div>
 					</div>
-					<div class="row">
-						<div class="col-md-4">
+				</div>
+				<div class="swiper-best-service swiper-container">
+					<div class="swiper-wrapper">
+						<div class="swiper-slide d-lg-none">
 							<div class="best-service__item">
-								<img src="images/service-3.png" />
-								<a class="best-service__view-detail">
+								<div class="best-service__image">
+									<img src="images/service-1-mobile.png" />
+									<div class="best-service__info">
+										<img src="images/best-service-icon.png" />
+										<h6>ĐIỀU TRỊ NÁM, TÀN NHANG CÔNG NGHỆ MELAS CELL</h6>
+									</div>
+								</div>
+								<a class="best-service__view-detail" href="#" target="_blank">
 									Xem chi tiết
 									<svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-arrow-right" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
 										<path fill-rule="evenodd" d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8z"/>
@@ -151,10 +265,16 @@
 								</a>
 							</div>
 						</div>
-						<div class="col-md-4 best-service__item">
+						<div class="swiper-slide">
 							<div class="best-service__item">
-								<img src="images/service-4.png" />
-								<a class="best-service__view-detail">
+								<div class="best-service__image">
+									<img src="images/service-3.png" />
+									<div class="best-service__info">
+										<img src="images/best-service-icon.png" />
+										<h6>LIỆU PHÁPTƯƠI TRẺ SKIN PERFECT</h6>
+									</div>
+								</div>
+								<a class="best-service__view-detail" href="#" target="_blank">
 									Xem chi tiết
 									<svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-arrow-right" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
 										<path fill-rule="evenodd" d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8z"/>
@@ -162,10 +282,33 @@
 								</a>
 							</div>
 						</div>
-						<div class="col-md-4 best-service__item">
+						<div class="swiper-slide">
 							<div class="best-service__item">
-								<img src="images/service-5.png" />
-								<a class="best-service__view-detail">
+								<div class="best-service__image">
+									<img src="images/service-4.png" />
+									<div class="best-service__info">
+										<img src="images/best-service-icon.png" />
+										<h6>ĐIỀU TRỊ MỤN KHÔNG SẸO CÔNG NGHỆ MEDI ACNE</h6>
+									</div>
+								</div>
+								<a class="best-service__view-detail" href="#" target="_blank">
+									Xem chi tiết
+									<svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-arrow-right" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+										<path fill-rule="evenodd" d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8z"/>
+									</svg>
+								</a>
+							</div>
+						</div>
+						<div class="swiper-slide">
+							<div class="best-service__item">
+								<div class="best-service__image">
+									<img src="images/service-5.png" />
+									<div class="best-service__info">
+										<img src="images/best-service-icon.png" />
+										<h6>ĐIỀU TRỊ MỤN KHÔNG SẸO CÔNG NGHỆ MEDI ACNE</h6>
+									</div>
+								</div>
+								<a class="best-service__view-detail" href="#" target="_blank">
 									Xem chi tiết
 									<svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-arrow-right" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
 										<path fill-rule="evenodd" d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8z"/>
@@ -174,6 +317,7 @@
 							</div>
 						</div>
 					</div>
+					<div class="swiper-best-service-pagination swiper-pagination"></div>
 				</div>
 			</div>
 		</section>
@@ -182,11 +326,35 @@
 			<div class="container">
 				<div class="videos__content">
 					<div class="row m-b-20">
-						<div class="col-md-5 videos__info">
+						<div class="col-lg-5 videos__info">
 							<span>VIDEOS</span>
 							<h5 class="m-b-20">Thải Độc Da Ultra Detox - Da Đẹp Bất Chất Tuổi Tác</h5>
+							<div class="d-none d-lg-block">
+								<p>
+									• Da sần sùi vỏ cam - Da đổ dầu, bóng nhẫy <br>
+									• Lỗ chân lông ngày càng to như vết rỗ - Mụn ẩn, mụn đầu đen tràn lan khắp mặt 
+								</p>
+								<strong>THẢI ĐỘC CHÌ ULTRA DETOX </strong>
+								<p>
+									- Quét sạch cặn bẩn, dầu thừa, tàn tích mỹ phẩm trong từng lỗ chân lông <br>
+									- Bio Detox đi sâu vào biểu bì, thanh lọc từng tế bào da<br>
+									- Cung cấp khoáng chất cần thiết giúp tái tạo và trẻ hóa da nhanh chóng <br>
+									- Da sáng đều màu, sờ tới đâu mướt mịn tới đó<br>
+									- Hiệu quả thấy ngay lần đầu thực hiện
+								</p>
+							</div>
+						</div>
+						<div class="col-lg-7">
+							<div class="videos__body">
+								<img src="images/videos-1.png" />
+								<a class="videos__play" href="#" target="_blank">
+									<img src="images/play-button.png" />
+								</a>
+							</div>
+						</div>
+						<div class="d-lg-none m-t-20 col-12">
 							<p>
-								• Da sần sùi vỏ cam - Da đổ dầu, bóng nhẫy 
+								• Da sần sùi vỏ cam - Da đổ dầu, bóng nhẫy <br>
 								• Lỗ chân lông ngày càng to như vết rỗ - Mụn ẩn, mụn đầu đen tràn lan khắp mặt 
 							</p>
 							<strong>THẢI ĐỘC CHÌ ULTRA DETOX </strong>
@@ -198,14 +366,6 @@
 								- Hiệu quả thấy ngay lần đầu thực hiện
 							</p>
 						</div>
-						<div class="col-md-7">
-							<div class="videos__body">
-								<img src="images/videos-1.png" />
-								<a class="videos__play">
-									<img src="images/play-button.png" />
-								</a>
-							</div>
-						</div>
 					</div>
 				</div>
 				<div class="videos__slider">
@@ -213,47 +373,58 @@
 						<div class="swiper-wrapper">
 							<div class="swiper-slide">
 								<div class="videos__item">
-									<img src="images/videos-2.png" />
+									<div class="videos__item-img">
+										<img src="images/videos-2.png" />
+										<a class="videos__play" href="#" target="_blank">
+											<img src="images/play-button.png" />
+										</a>
+									</div>
 									<p class="m-b-0 m-t-16">Chấm Dứt Ngăm Lì & Lão Hóa Chỉ Với 1 Liệu Trình Cấy Hồng Sâm Tại Viện Thẩm</p>
-									<a class="videos__play">
-										<img src="images/play-button.png" />
-									</a>
 								</div>
 							</div>
 							<div class="swiper-slide">
 								<div class="videos__item">
-									<img src="images/videos-3.png" />
+									<div class="videos__item-img">
+										<img src="images/videos-3.png" />
+										<a class="videos__play" href="#" target="_blank">
+											<img src="images/play-button.png" />
+										</a>
+									</div>
 									<p class="m-b-0 m-t-16">10 Năm Bị Nám Của Cô Chủ Quán Cà Phê Chấm Dứt Sau 1 Liệu Trình</p>
-									<a class="videos__play">
-										<img src="images/play-button.png" />
-									</a>
+									
 								</div>
 							</div>
 							<div class="swiper-slide">
 								<div class="videos__item">
-									<img src="images/videos-4.png" />
+									<div class="videos__item-img">
+										<img src="images/videos-4.png" />
+										<a class="videos__play" href="#" target="_blank">
+											<img src="images/play-button.png" />
+										</a>
+									</div>
 									<p class="m-b-0 m-t-16">Ca Rỗ Khó Nhất Lịch Sử Bị Hạ Gục Bởi Cn Plasma Scar</p>
-									<a class="videos__play">
-										<img src="images/play-button.png" />
-									</a>
 								</div>
 							</div>
 							<div class="swiper-slide">
 								<div class="videos__item">
-									<img src="images/videos-3.png" />
+									<div class="videos__item-img">
+										<img src="images/videos-3.png" />
+										<a class="videos__play" href="#" target="_blank">
+											<img src="images/play-button.png" />
+										</a>
+									</div>
 									<p class="m-b-0 m-t-16">Ca Rỗ Khó Nhất Lịch Sử Bị Hạ Gục Bởi Cn Plasma Scar</p>
-									<a class="videos__play">
-										<img src="images/play-button.png" />
-									</a>
 								</div>
 							</div>
 							<div class="swiper-slide">
 								<div class="videos__item">
-									<img src="images/videos-2.png" />
+									<div class="videos__item-img">
+										<img src="images/videos-2.png" />
+										<a class="videos__play" href="#" target="_blank">
+											<img src="images/play-button.png" />
+										</a>
+									</div>
 									<p class="m-b-0 m-t-16">Ca Rỗ Khó Nhất Lịch Sử Bị Hạ Gục Bởi Cn Plasma Scar</p>
-									<a class="videos__play">
-										<img src="images/play-button.png" />
-									</a>
 								</div>
 							</div>
 						</div>
@@ -270,7 +441,7 @@
 		<section class="experience">
 			<div class="container">
 				<div class="experience__header m-b-50">
-					<h4>TRẢI NGHIỆM KHÁCH HÀNG</h4>
+					<h4 class="title-section">TRẢI NGHIỆM KHÁCH HÀNG</h4>
 					<p class="m-b-0">Customer Experiences</p>
 				</div>
 				<div class="experience__slider">
@@ -365,7 +536,7 @@
 		<section class="customer-images">
 			<div class="container-fluid">
 				<div class="customer-images__header m-b-50">
-					<h4>HÌNH ẢNH KHÁCH HÀNG THÀNH CÔNG</h4>
+					<h4 class="title-section">HÌNH ẢNH KHÁCH HÀNG THÀNH CÔNG</h4>
 					<p class="m-b-0">Before & After Cosmetic Care</p>
 				</div>
 				<div class="customer-images__slider">
@@ -434,6 +605,27 @@
 									</div>
 								</div>
 							</div>
+							<div class="swiper-slide">
+								<div class="customer-images__item">
+									<div class="customer-images__image">
+										<div class="customer-images__image-before">
+											<img src="images/user-b-2.png" />
+											<div>Trước</div>
+										</div>
+										<div class="customer-images__image-after">
+											<img src="images/user-a-2.png" />
+											<div>Sau</div>
+										</div>
+									</div>
+									<div class="customer-images__info">
+										<h5 class="customer-images__info-name">
+											Người mẫu Mai Phương Thúy
+										</h5>
+										<span class="customer-images__info-type">CHĂM SÓC LÀM TRẮNG DA</span>
+										<p>Thay đổi hình ảnh một cách ngoạn mục nhờ trị liệu chăm sóc da của người mẫu Phương Thúy</p>
+									</div>
+								</div>
+							</div>
 						</div>
 						<div class="swiper-customer-images-button-next swiper-button-next"></div>
 						<div class="swiper-customer-images-button-prev swiper-button-prev"></div>
@@ -448,7 +640,7 @@
 			<div class="row">
 				<div class="col-lg-5 infrastructure__content">
 					<img src="images/logo-header-w.png" />
-					<h4>CƠ SỞ VẬT CHẤT HIỆN ĐẠI ĐẠT CẤP QUỐC TẾ VÀ CÔNG NGHỆ CAO</h4>
+					<h4 class="title-section">CƠ SỞ VẬT CHẤT HIỆN ĐẠI ĐẠT CẤP QUỐC TẾ VÀ CÔNG NGHỆ CAO</h4>
 					<p class="m-b-0">
 						Thẩm Mỹ Viện Voza được ví như một thiên đường làm đẹp chuẩn Quốc tế ngay tại Việt Nam, 
 						sự lựa chọn hàng đầu của hàng nghìn khách hàng khắp nơi trên cả nước. 
@@ -479,7 +671,7 @@
 		<section class="news">
 			<div class="container">
 				<div class="news__header m-b-50">
-					<h4>Tin tức nổi bật</h4>
+					<h4 class="title-section">Tin tức nổi bật</h4>
 					<p class="m-b-0">Featured News</p>
 				</div>
 				<div class="news__slider">
@@ -489,7 +681,7 @@
 								<div class="news__item">
 									<img src="images/news-1.png" />
 									<div class="news__info">
-										<a>
+										<a href="#">
 											Chương trình Grand Opening - VTM Voza “Sale tưng bừng, mừng khai trương”
 										</a>
 										<p class="">
@@ -506,7 +698,7 @@
 								<div class="news__item">
 									<img src="images/news-2.png" />
 									<div class="news__info">
-										<a>
+										<a href="#">
 											Chương trình Grand Opening - VTM Voza “Sale tưng bừng, mừng khai trương”
 										</a>
 										<p class="">
@@ -523,7 +715,41 @@
 								<div class="news__item">
 									<img src="images/news-3.png" />
 									<div class="news__info">
-										<a>
+										<a href="#">
+											Chương trình Grand Opening - VTM Voza “Sale tưng bừng, mừng khai trương”
+										</a>
+										<p class="">
+											Tháng 7 này, Viện Thẩm Mỹ Voza triển khai “Grand Open upto 70%” áp dụng cho hầu hết tất cả dịch vụ. Nhằm chào mừng khai trương Viện Thẩm Mỹ Voza... chuyên về làm đẹp cho chị em phụ nữ ở địa chỉ 05 Lê Đình Lý, phường Vĩnh Trung, quận Thanh Khê, TP. Đà Nẵng.
+										</p>
+										<div class="news__info-footer">
+											<span>24 Tháng 4, 2020</span>
+											<span>3,412 Lượt xem</span>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="swiper-slide">
+								<div class="news__item">
+									<img src="images/news-1.png" />
+									<div class="news__info">
+										<a href="#">
+											Chương trình Grand Opening - VTM Voza “Sale tưng bừng, mừng khai trương”
+										</a>
+										<p class="">
+											Tháng 7 này, Viện Thẩm Mỹ Voza triển khai “Grand Open upto 70%” áp dụng cho hầu hết tất cả dịch vụ. Nhằm chào mừng khai trương Viện Thẩm Mỹ Voza... chuyên về làm đẹp cho chị em phụ nữ ở địa chỉ 05 Lê Đình Lý, phường Vĩnh Trung, quận Thanh Khê, TP. Đà Nẵng.
+										</p>
+										<div class="news__info-footer">
+											<span>24 Tháng 4, 2020</span>
+											<span>3,412 Lượt xem</span>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="swiper-slide">
+								<div class="news__item">
+									<img src="images/news-2.png" />
+									<div class="news__info">
+										<a href="#">
 											Chương trình Grand Opening - VTM Voza “Sale tưng bừng, mừng khai trương”
 										</a>
 										<p class="">
@@ -549,71 +775,177 @@
 		<section class="promotions">
 			<div class="container">
 				<div class="promotions__header m-b-50">
-					<h4>CHƯƠNG TRÌNH ƯU ĐÃI</h4>
+					<h4 class="title-section">CHƯƠNG TRÌNH ƯU ĐÃI</h4>
 					<p class="m-b-0">Special Offers</p>
 				</div>
-				<div class="row promotions__list">
-					<div class="col-md-4 promotions__item">
-						<img src="images/promotions-1.png" />
-						<div class="promotions__info">
-							<a>
-								Tưng bừng khai trương Viện thẩm mỹ Voza - ưu đãi lên đến 70%
-							</a>
-							<p class="">
-								Viện Thẩm Mỹ tưng bừng khai trương cơ sở làm đẹp đẳng cấp châu Âu ngay tại thành phố đáng sống – Đà Nẵng. Sự kiện “hot” này sẽ diễn ra trong...
-							</p>
-							<div class="promotions__info-footer">
-								<span>Thời gian áp dụng:</span>
-								<strong>22/10 - 22/11/2020</strong>
+				<div class="row promotions__slider">
+					<div class="swiper-promotions swiper-container">
+						<div class="swiper-wrapper">
+							<div class="swiper-slide">
+								<div class="promotions__item">
+									<img src="images/promotions-1.png" />
+									<div class="promotions__info">
+										<a href="#">
+											Tưng bừng khai trương Viện thẩm mỹ Voza - ưu đãi lên đến 70%
+										</a>
+										<p class="">
+											Viện Thẩm Mỹ tưng bừng khai trương cơ sở làm đẹp đẳng cấp châu Âu ngay tại thành phố đáng sống – Đà Nẵng. Sự kiện “hot” này sẽ diễn ra trong...
+										</p>
+										<div class="promotions__info-footer">
+											<span>Thời gian áp dụng:</span>
+											<strong>22/10 - 22/11/2020</strong>
+										</div>
+									</div>
+								</div>
 							</div>
-						</div>
-					</div>
-					<div class="col-md-4 promotions__item">
-						<img src="images/promotions-2.png" />
-						<div class="promotions__info">
-							<a>
-								Tưng bừng khai trương Viện thẩm mỹ Voza - Đà Nẵng
-							</a>
-							<p class="">
-								Sáng 25/07, tại 05 Lê Đình Lý, thành phố Đà Nẵng. Viện Thẩm Mỹ VoZa tổ chức thành công Lễ Khai Trương Viện  với sự tham dự của nhiều nghệ sĩ nổi... tiếng
-							</p>
-							<div class="promotions__info-footer">
-								<span>Thời gian áp dụng:</span>
-								<strong>22/10 - 22/11/2020</strong>
+							<div class="swiper-slide">
+								<div class="promotions__item">
+									<img src="images/promotions-2.png" />
+									<div class="promotions__info">
+										<a href="#">
+											Tưng bừng khai trương Viện thẩm mỹ Voza - Đà Nẵng
+										</a>
+										<p class="">
+											Sáng 25/07, tại 05 Lê Đình Lý, thành phố Đà Nẵng. Viện Thẩm Mỹ VoZa tổ chức thành công Lễ Khai Trương Viện  với sự tham dự của nhiều nghệ sĩ nổi... tiếng
+										</p>
+										<div class="promotions__info-footer">
+											<span>Thời gian áp dụng:</span>
+											<strong>22/10 - 22/11/2020</strong>
+										</div>
+									</div>
+								</div>
 							</div>
-						</div>
-					</div>
-					<div class="col-md-4 promotions__item">
-						<img src="images/promotions-3.png" />
-						<div class="promotions__info">
-							<a>
-								Chương trình Grand Opening - VTM Voza “Sale tưng bừng, mừng khai trương”
-							</a>
-							<p class="">
-								Tháng 7 này, Viện Thẩm Mỹ Voza triển khai “Grand Open upto 70%” áp dụng cho hầu hết tất cả dịch vụ. Nhằm chào mừng khai trương Viện Thẩm Mỹ Voza... chuyên về làm đẹp cho chị em phụ nữ ở địa chỉ 05 Lê Đình Lý, phường Vĩnh Trung, quận Thanh Khê, TP. Đà Nẵng.
-							</p>
-							<div class="promotions__info-footer">
-								<span>Thời gian áp dụng:</span>
-								<strong>22/10 - 22/11/2020</strong>
+							<div class="swiper-slide">
+								<div class="promotions__item">
+									<img src="images/promotions-3.png" />
+									<div class="promotions__info">
+										<a href="#">
+											Chương trình Grand Opening - VTM Voza “Sale tưng bừng, mừng khai trương”
+										</a>
+										<p class="">
+											Tháng 7 này, Viện Thẩm Mỹ Voza triển khai “Grand Open upto 70%” áp dụng cho hầu hết tất cả dịch vụ. Nhằm chào mừng khai trương Viện Thẩm Mỹ Voza... chuyên về làm đẹp cho chị em phụ nữ ở địa chỉ 05 Lê Đình Lý, phường Vĩnh Trung, quận Thanh Khê, TP. Đà Nẵng.
+										</p>
+										<div class="promotions__info-footer">
+											<span>Thời gian áp dụng:</span>
+											<strong>22/10 - 22/11/2020</strong>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="swiper-slide">
+								<div class="promotions__item">
+									<img src="images/promotions-1.png" />
+									<div class="promotions__info">
+										<a href="#">
+											Tưng bừng khai trương Viện thẩm mỹ Voza - ưu đãi lên đến 70%
+										</a>
+										<p class="">
+											Viện Thẩm Mỹ tưng bừng khai trương cơ sở làm đẹp đẳng cấp châu Âu ngay tại thành phố đáng sống – Đà Nẵng. Sự kiện “hot” này sẽ diễn ra trong...
+										</p>
+										<div class="promotions__info-footer">
+											<span>Thời gian áp dụng:</span>
+											<strong>22/10 - 22/11/2020</strong>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="swiper-slide">
+								<div class="promotions__item">
+									<img src="images/promotions-2.png" />
+									<div class="promotions__info">
+										<a href="#">
+											Tưng bừng khai trương Viện thẩm mỹ Voza - Đà Nẵng
+										</a>
+										<p class="">
+											Sáng 25/07, tại 05 Lê Đình Lý, thành phố Đà Nẵng. Viện Thẩm Mỹ VoZa tổ chức thành công Lễ Khai Trương Viện  với sự tham dự của nhiều nghệ sĩ nổi... tiếng
+										</p>
+										<div class="promotions__info-footer">
+											<span>Thời gian áp dụng:</span>
+											<strong>22/10 - 22/11/2020</strong>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="swiper-slide">
+								<div class="promotions__item">
+									<img src="images/promotions-3.png" />
+									<div class="promotions__info">
+										<a href="#">
+											Chương trình Grand Opening - VTM Voza “Sale tưng bừng, mừng khai trương”
+										</a>
+										<p class="">
+											Tháng 7 này, Viện Thẩm Mỹ Voza triển khai “Grand Open upto 70%” áp dụng cho hầu hết tất cả dịch vụ. Nhằm chào mừng khai trương Viện Thẩm Mỹ Voza... chuyên về làm đẹp cho chị em phụ nữ ở địa chỉ 05 Lê Đình Lý, phường Vĩnh Trung, quận Thanh Khê, TP. Đà Nẵng.
+										</p>
+										<div class="promotions__info-footer">
+											<span>Thời gian áp dụng:</span>
+											<strong>22/10 - 22/11/2020</strong>
+										</div>
+									</div>
+								</div>
 							</div>
 						</div>
 					</div>
 				</div>
+				<div class="swiper-promotions-pagination swiper-pagination"></div>
+				<!-- <nav aria-label="" class="d-flex justify-content-center">
+					<ul class="pagination">
+						<li class="page-item active">
+							<a class="page-link" href="#" tabindex="-1">1</a>
+						</li>
+						<li class="page-item"><a class="page-link" href="#">2</a></li>
+						<li class="page-item"><a class="page-link" href="#">4</a></li>
+						<li class="page-item"><a class="page-link" href="#">5</a></li>
+						<li class="page-item dots">...</li>
+						<li class="page-item"><a class="page-link" href="#">20</a></li>
+					</ul>
+				</nav> -->
 			</div>
 		</section>
 
 		<section class="contact">
 			<div class="container">
 				<div class="row">
-					<div class="col-md-2">
+					<div class="col-lg-3 contact__1">
 						<img src="images/logo-header-w.png" />
 						<img src="images/contact-1.png" />
 					</div>
-					<div class="col-md-5">
-
+					<div class="col-lg-4 contact__2">
+						<h5 class="m-b-15">LIÊN HỆ</h5>
+						<div class="d-flex m-b-15">
+							<div>
+								<img src="images/telephone.png" />
+								<span class="m-l-5">0931.312.321</span>
+							</div>
+							<div class="m-l-30">
+								<img src="images/clock.png" />
+								<span class="m-l-5">Thứ 2 - CN : 08h00 - 19h30</span>
+							</div>
+						</div>
+						<div class="m-b-30 d-flex align-items-start">
+							<img src="images/placeholder.png" />
+							<span class="m-l-8">05 Lê Đình Lý, P. Vĩnh Trung, Q. Thanh Khê, TP. Đà Nẵng</span>
+						</div>
+						<h6 class="m-b-20">Kết nối với chúng tôi</h6>
+						<div>
+							<a href="#" target="_blank"><img src="images/facebook.png" /></a>
+							<a href="#" target="_blank" class="m-l-16"><img src="images/youtube.png" /></a>
+							<a href="#" target="_blank" class="m-l-16"><img src="images/zalo-icon-11.png" /></a>
+						</div>
 					</div>
-					<div class="col-md-5">
-
+					<div class="col-lg-5 contact__3">
+						<h5>Viện Thẩm Mỹ Voza - Thanh Xuân Là Vô Giá</h5>
+						<p class="m-b-20">Đăng ký tư vấn miễn phí</p>
+						<form>
+							<div class="m-b-10">
+								<input type="text" class="form-control" placeholder="Họ và Tên" id="name">
+							</div>
+							<div class="m-b-20">
+								<input type="text" class="form-control" placeholder="Số điện thoại" id="phone">
+							</div>
+							<div>
+								<button class="btn btn-danger w-100">Gửi đi</button>
+							</div>
+						</form>
 					</div>
 				</div>
 			</div>
