@@ -458,8 +458,16 @@
                 margin-bottom: 20px !important; 
             }
         }
+        .infrastructure{
+            &__column:nth-child(2) img{
+                padding-left: 3px;
+            }
+            &__column{
+                align-items: center;
+            }
+        }
         .contact{
-            padding: 35px 0;
+            padding: 35px 0 100px 0;
             &__3 {
                 form{
                     width: 100%;
