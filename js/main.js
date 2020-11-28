@@ -190,10 +190,10 @@ $(function(){
 			  el: '.swiper-best-service-pagination',
 			  clickable: true,
 			},
-			// autoplay: {
-			// 	delay: 5000,
-			// 	disableOnInteraction: true,
-			// },
+			autoplay: {
+				delay: 5000,
+				disableOnInteraction: true,
+			},
 			breakpoints: {
 				0: {
 					slidesPerView: 1,
