@@ -76,6 +76,7 @@
                 display: flex;
                 align-items: center;
                 flex-direction: column;
+                white-space: nowrap;
                 &:hover{
                     color: $white-color;
                 }
@@ -728,6 +729,98 @@
                     color: #616161;
                 }
             }
+        }
+    }
+    .nav-footer{
+        display: none;
+        position: fixed;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        height: 50px;
+        z-index: 1025;
+        justify-content: space-between;
+        align-items: center;
+        background-color: #0091ae;
+        >div{
+            flex: 1;
+            a, button{
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-self: center;
+                color: $white-color;
+                text-transform: uppercase;
+                font-size: 10px;
+                font-weight: 600;
+                white-space: nowrap;
+                img{
+                    margin-bottom:4px;
+                }
+            }
+        }
+        &__center{
+            a{
+                padding: 0 0 12px 0;
+            }
+        }
+    }
+    .navbar-noti{
+        animation: ring 1.2s ease-in-out infinite;
+    }
+    @keyframes ring {
+        0% {
+            transform: rotate(0deg);
+        }
+        10%,
+        30%,
+        50%,
+        70%,
+        90% {
+            transform: rotate(20deg);
+        }
+        20%,
+        40%,
+        60%,
+        80% {
+            transform: rotate(-20deg);
+        }
+        100% {
+            transform: rotate(0deg);
+        }
+    }
+    .nav-footer__telephone, .nav-footer__date, .nav-footer__herbal{
+        img{
+            animation:phonering-alo-circle-img-anim 1s infinite ease-in-out;
+        }
+    }
+    @keyframes phonering-alo-circle-img-anim {
+        0% {
+            -webkit-transform:rotate(0) scale(1) skew(1deg)
+        }
+    
+        10% {
+            -webkit-transform:rotate(-25deg) scale(1) skew(1deg)
+        }
+    
+        20% {
+            -webkit-transform:rotate(25deg) scale(1) skew(1deg)
+        }
+    
+        30% {
+            -webkit-transform:rotate(-25deg) scale(1) skew(1deg)
+        }
+    
+        40% {
+            -webkit-transform:rotate(25deg) scale(1) skew(1deg)
+        }
+    
+        50% {
+            -webkit-transform:rotate(0) scale(1) skew(1deg)
+        }
+    
+        100% {
+            -webkit-transform:rotate(0) scale(1) skew(1deg)
         }
     }
 }
