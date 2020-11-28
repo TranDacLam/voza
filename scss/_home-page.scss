@@ -79,9 +79,15 @@
                 white-space: nowrap;
                 &:hover{
                     color: $white-color;
+                    img{
+                        // animation: circle .6s ease-in-out;
+                        transform: rotate(360deg);
+                    }
                 }
                 img{
                     margin-bottom: 12px;
+                    transform: rotate(0deg);
+                    transition: transform .5s ease-in-out;
                 }
             }
         }
@@ -796,31 +802,41 @@
     }
     @keyframes phonering-alo-circle-img-anim {
         0% {
-            -webkit-transform:rotate(0) scale(1) skew(1deg)
+            transform:rotate(0) scale(1) skew(1deg)
         }
     
         10% {
-            -webkit-transform:rotate(-25deg) scale(1) skew(1deg)
+            transform:rotate(-25deg) scale(1) skew(1deg)
         }
     
         20% {
-            -webkit-transform:rotate(25deg) scale(1) skew(1deg)
+            transform:rotate(25deg) scale(1) skew(1deg)
         }
     
         30% {
-            -webkit-transform:rotate(-25deg) scale(1) skew(1deg)
+            transform:rotate(-25deg) scale(1) skew(1deg)
         }
     
         40% {
-            -webkit-transform:rotate(25deg) scale(1) skew(1deg)
+            transform:rotate(25deg) scale(1) skew(1deg)
         }
     
         50% {
-            -webkit-transform:rotate(0) scale(1) skew(1deg)
+            transform:rotate(0) scale(1) skew(1deg)
         }
     
         100% {
-            -webkit-transform:rotate(0) scale(1) skew(1deg)
+            transform:rotate(0) scale(1) skew(1deg)
+        }
+    }
+
+    @keyframes circle {
+        0% {
+            transform:rotate(0deg)
+        }
+    
+        100% {
+            transform:rotate(360deg)
         }
     }
 }

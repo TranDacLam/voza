@@ -13105,8 +13105,12 @@ img {
       white-space: nowrap; }
       .home-page .navbar-nav .nav-link:hover {
         color: #FFFFFF; }
+        .home-page .navbar-nav .nav-link:hover img {
+          transform: rotate(360deg); }
       .home-page .navbar-nav .nav-link img {
-        margin-bottom: 12px; }
+        margin-bottom: 12px;
+        transform: rotate(0deg);
+        transition: transform .5s ease-in-out; }
   .home-page .navbar-brand {
     padding: 18px 30px;
     background: #fff;
@@ -13678,19 +13682,25 @@ img {
 
 @keyframes phonering-alo-circle-img-anim {
   0% {
-    -webkit-transform: rotate(0) scale(1) skew(1deg); }
+    transform: rotate(0) scale(1) skew(1deg); }
   10% {
-    -webkit-transform: rotate(-25deg) scale(1) skew(1deg); }
+    transform: rotate(-25deg) scale(1) skew(1deg); }
   20% {
-    -webkit-transform: rotate(25deg) scale(1) skew(1deg); }
+    transform: rotate(25deg) scale(1) skew(1deg); }
   30% {
-    -webkit-transform: rotate(-25deg) scale(1) skew(1deg); }
+    transform: rotate(-25deg) scale(1) skew(1deg); }
   40% {
-    -webkit-transform: rotate(25deg) scale(1) skew(1deg); }
+    transform: rotate(25deg) scale(1) skew(1deg); }
   50% {
-    -webkit-transform: rotate(0) scale(1) skew(1deg); }
+    transform: rotate(0) scale(1) skew(1deg); }
   100% {
-    -webkit-transform: rotate(0) scale(1) skew(1deg); } }
+    transform: rotate(0) scale(1) skew(1deg); } }
+
+@keyframes circle {
+  0% {
+    transform: rotate(0deg); }
+  100% {
+    transform: rotate(360deg); } }
 
 /* Extra small devices (phones, 600px and down) */
 /* Small devices (portrait tablets and large phones, 600px and up) */

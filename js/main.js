@@ -1,4 +1,6 @@
 $(function(){
+	$("html, body").animate({ scrollTop: 0 }, "slow");
+	
 	new Swiper('.swiper-header', {
 		pagination: {
 			el: '.swiper-header-pagination',
