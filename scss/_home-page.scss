@@ -387,6 +387,31 @@
                 font-size: 16px;
             }
         }
+        &__nav{
+            justify-content: center;
+            margin-bottom: 30px;
+            .nav{
+                &-link{
+                    padding: 4px 10px;
+                    border: 1px solid #0091ae;
+                    border-radius: 99px;
+                    color: #0091ae;
+                    font-size: 16px;
+                    font-weight: 500;
+                    &:hover, &.active{
+                        background-color: #0091ae;
+                        color: #fff;
+                    }
+                    
+                }
+            }
+            li{
+                margin-right: 12px;
+                &:last-child{
+                    margin-right: 0;
+                }
+            }
+        }
         &__item{
             display: flex;
             flex-direction: column;

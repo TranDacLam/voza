@@ -76,34 +76,66 @@ $(function(){
 		}
 	});
 
-	new Swiper('.swiper-customer-images', {
-		slidesPerView: 3,
-      	spaceBetween: 20,
-		pagination: {
-		  el: '.swiper-customer-images-pagination',
-		  clickable: true,
-		},
-		navigation: {
-			nextEl: '.swiper-customer-images-button-next',
-			prevEl: '.swiper-customer-images-button-prev',
-		},
-		autoplay: {
-			delay: 5000,
-			disableOnInteraction: true,
-		},
-		breakpoints: {
-			0: {
-				slidesPerView: 1,
-				spaceBetween: 5,
+	var configSwiperCustomerImages = function (index) {
+		return {
+			slidesPerView: 3,
+			  spaceBetween: 20,
+			pagination: {
+			  el: '.swiper-customer-images-pagination-'+ index,
+			  clickable: true,
 			},
-			480: {
-				slidesPerView: 2,
-				spaceBetween: 20,
+			navigation: {
+				nextEl: '.swiper-customer-images-button-next-'+ index,
+				prevEl: '.swiper-customer-images-button-prev-'+ index,
 			},
-			992: {
-				slidesPerView: '3',
+			autoplay: {
+				delay: 5000,
+				disableOnInteraction: true,
 			},
+			breakpoints: {
+				0: {
+					slidesPerView: 1,
+					spaceBetween: 5,
+				},
+				480: {
+					slidesPerView: 2,
+					spaceBetween: 20,
+				},
+				992: {
+					slidesPerView: '3',
+				},
+			}
 		}
+	}
+
+	let swiperCustomerImages1 = new Swiper('.swiper-customer-images-1', configSwiperCustomerImages(1));
+	let swiperCustomerImages2 = new Swiper('.swiper-customer-images-2', configSwiperCustomerImages(2));
+	let swiperCustomerImages3 = new Swiper('.swiper-customer-images-3', configSwiperCustomerImages(3));
+	let swiperCustomerImages4 = new Swiper('.swiper-customer-images-4', configSwiperCustomerImages(4));
+
+	$('.customer-images a[data-toggle="tab"]').on('shown.bs.tab', function (e) {
+        e.target // newly activated tab
+		e.relatedTarget // previous active tab
+		let index = $(this).attr('data-swiper-index');
+		if(index){
+			switch(index){
+				case '1':
+					swiperCustomerImages1.update()
+					break;
+				case '2':
+					swiperCustomerImages2.update()
+					break;
+				case '3':
+					swiperCustomerImages3.update()
+					break;
+				case '4':
+					swiperCustomerImages4.update()
+					break;
+				default:
+					swiperCustomerImages1.update()
+			}
+		}
+		
 	});
 
 	new Swiper('.swiper-news', {

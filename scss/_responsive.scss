@@ -442,6 +442,19 @@
         }
         .customer-images {
             padding: 35px 0;
+            &__nav{
+                padding: 0 15px;
+                li{
+                    margin-bottom: 10px;
+                    &:nth-child(2){
+                        margin-right: 0;
+                    }
+                }
+                .nav-link{
+                    min-width: 130px;
+                    text-align: center;
+                }
+            }
             .swiper-customer-images-pagination{
                 margin-top: 10px;
             }

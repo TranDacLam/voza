@@ -13348,6 +13348,23 @@ img {
     .home-page .customer-images__header p {
       font-weight: 500;
       font-size: 16px; }
+  .home-page .customer-images__nav {
+    justify-content: center;
+    margin-bottom: 30px; }
+    .home-page .customer-images__nav .nav-link {
+      padding: 4px 10px;
+      border: 1px solid #0091ae;
+      border-radius: 99px;
+      color: #0091ae;
+      font-size: 16px;
+      font-weight: 500; }
+      .home-page .customer-images__nav .nav-link:hover, .home-page .customer-images__nav .nav-link.active {
+        background-color: #0091ae;
+        color: #fff; }
+    .home-page .customer-images__nav li {
+      margin-right: 12px; }
+      .home-page .customer-images__nav li:last-child {
+        margin-right: 0; }
   .home-page .customer-images__item {
     display: flex;
     flex-direction: column;
@@ -13991,6 +14008,15 @@ img {
       margin-top: 20px; }
   .home-page .customer-images {
     padding: 35px 0; }
+    .home-page .customer-images__nav {
+      padding: 0 15px; }
+      .home-page .customer-images__nav li {
+        margin-bottom: 10px; }
+        .home-page .customer-images__nav li:nth-child(2) {
+          margin-right: 0; }
+      .home-page .customer-images__nav .nav-link {
+        min-width: 130px;
+        text-align: center; }
     .home-page .customer-images .swiper-customer-images-pagination {
       margin-top: 10px; }
   .home-page .news {
