@@ -215,27 +215,27 @@ $(function(){
 		}
 	});
 
-	function callSwiperBestService(){
-		new Swiper('.swiper-best-service', {
-			slidesPerView: 1,
-			centeredSlides: true,
-			loop: true,
-			pagination: {
-			  el: '.swiper-best-service-pagination',
-			  clickable: true,
-			},
-			autoplay: {
-				delay: 5000,
-				disableOnInteraction: true,
-			},
-			breakpoints: {
-				0: {
-					slidesPerView: 1,
-					spaceBetween: 5,
-				}
-			}
-		});
-	}
+	// function callSwiperBestService(){
+	// 	new Swiper('.swiper-best-service', {
+	// 		slidesPerView: 1,
+	// 		centeredSlides: true,
+	// 		loop: true,
+	// 		pagination: {
+	// 		  el: '.swiper-best-service-pagination',
+	// 		  clickable: true,
+	// 		},
+	// 		autoplay: {
+	// 			delay: 5000,
+	// 			disableOnInteraction: true,
+	// 		},
+	// 		breakpoints: {
+	// 			0: {
+	// 				slidesPerView: 1,
+	// 				spaceBetween: 5,
+	// 			}
+	// 		}
+	// 	});
+	// }
 
 	function menuDesktop(){
 		$("#navbar-menu .nav-item").hover(function() {
@@ -260,7 +260,7 @@ $(function(){
 			$("#navbar-menu .nav-item").removeClass('active')
 			$(this).addClass('active');
 		});
-		callSwiperBestService()
+		// callSwiperBestService()
 	}
 
 	function checkScreen(){

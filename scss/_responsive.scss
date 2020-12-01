@@ -55,18 +55,6 @@
                 align-items: center
             }
         }
-        .best-service{
-            .swiper-wrapper{
-                display: flex;
-                .swiper-slide{
-                    flex: 33.333333%;
-                    &:not(:last-child){
-                        margin-right: 20px;
-                    }
-                }
-            }
-            
-        }
     }
 }
 @media only screen and (min-width: 1200px) {
@@ -125,8 +113,21 @@
         .header{
             padding-top: 92px;
         }
-        .best-service__info h6{
-            font-size: 14px;
+    }
+}
+
+@media only screen and (max-width: 1200px) {
+    .home-page{
+        .best-service{
+            &__nav{
+                li{
+                    flex-basis: 25%;
+                    margin-bottom: 10px;
+                }
+            }
+            &__info-images{
+                padding: 0;
+            }
         }
     }
 }
@@ -488,29 +489,21 @@
             }
         }
         .best-service{
-            &__info{
-                position: unset;
-                img{
-                    position: absolute;
-                    top: 25px;
-                    right: 25px;
+            &__nav{
+                margin-bottom: 30px;
+                .nav-link{
+                    font-size: 13px;
+                    padding: 4px 10px;
                 }
-                h6{
-                    position: absolute;
-                    top: 88%;
-                    left: 0;
-                    right: 0;
-                    border-radius: 4px;
-                    background-color: #0091ae;
-                    color: #fff;
-                    padding: 12px 20px;
-                    width: 80%;
-                    margin: auto;
-                }
-                
             }
-            .swiper-best-service-pagination{
-                margin-top: 60px;
+            &__image{
+                margin-bottom: 30px;
+            }
+            &__info{
+                h6{
+                    margin-bottom: 15px;
+                    font-size: 21px;
+                }
             }
         }
     }

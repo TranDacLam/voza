@@ -13198,56 +13198,56 @@ img {
         left: calc(100% + 15px);
         top: -3px;
         bottom: 0; }
-  .home-page .best-service__item {
-    position: relative; }
-    .home-page .best-service__item:hover .best-service__view-detail {
-      opacity: 0.8; }
-  .home-page .best-service__image {
-    position: relative; }
-  .home-page .best-service__info {
-    position: absolute;
-    top: 0;
-    right: 0;
-    max-width: 45%;
-    bottom: 0;
-    margin: auto;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column; }
-    .home-page .best-service__info.reverse {
-      right: unset;
-      left: 0;
-      max-width: 55%; }
-    .home-page .best-service__info img {
-      margin-bottom: 15px; }
-    .home-page .best-service__info h6 {
-      text-align: center;
-      text-transform: uppercase;
-      font-size: 18px;
-      font-family: 'GaramondPremrPro-SmbdSubh';
-      line-height: 20px; }
-  .home-page .best-service .swiper-best-service .best-service__info {
-    max-width: 40%; }
-  .home-page .best-service__view-detail {
-    position: absolute;
-    bottom: 0;
-    right: 0;
-    border-radius: 5px 0 0;
-    background-color: #0091ae;
-    opacity: 0;
+  .home-page .best-service__nav {
+    margin-bottom: 50px; }
+    .home-page .best-service__nav li {
+      flex: 1; }
+    .home-page .best-service__nav .nav-link {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      color: #000;
+      font-weight: 500;
+      font-size: 16px;
+      text-align: center; }
+      .home-page .best-service__nav .nav-link:hover, .home-page .best-service__nav .nav-link.active {
+        color: #0091ae;
+        font-weight: 600; }
+      .home-page .best-service__nav .nav-link img {
+        width: 82px;
+        margin-bottom: 10px; }
+  .home-page .best-service__image img {
+    width: 100%; }
+  .home-page .best-service__info h6 {
+    color: #0091ae;
+    text-transform: uppercase;
+    margin-bottom: 1em;
+    font-size: 24px; }
+  .home-page .best-service__info p {
     font-size: 16px;
-    color: #FFFFFF;
-    padding: 8px 24px;
-    font-weight: 600;
+    margin-bottom: 20px; }
+  .home-page .best-service__info-images {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 15px;
+    margin-bottom: 25px; }
+    .home-page .best-service__info-images > div {
+      width: 33.3333%; }
+      .home-page .best-service__info-images > div:not(:last-child) {
+        margin-right: 20px; }
+    .home-page .best-service__info-images img {
+      width: 100%; }
+  .home-page .best-service__view-detail {
+    font-size: 16px;
+    color: #000;
+    font-weight: 500;
     cursor: pointer;
     transition: opacity .3s ease-in-out; }
-  .home-page .best-service .swiper-best-service-pagination {
-    position: unset;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-top: 40px; }
+    .home-page .best-service__view-detail:hover {
+      color: #0091ae;
+      font-weight: 600; }
 
 .home-page .videos {
   background-image: url(./../images/bg-videos.png);
@@ -13748,13 +13748,7 @@ img {
       .home-page .experience .swiper-slide-active .experience__item img {
         max-width: 100%; }
   .home-page .experience .swiper-wrapper {
-    align-items: center; }
-  .home-page .best-service .swiper-wrapper {
-    display: flex; }
-    .home-page .best-service .swiper-wrapper .swiper-slide {
-      flex: 33.333333%; }
-      .home-page .best-service .swiper-wrapper .swiper-slide:not(:last-child) {
-        margin-right: 20px; } }
+    align-items: center; } }
 
 @media only screen and (min-width: 1200px) {
   .home-page .experience__item > img {
@@ -13782,9 +13776,14 @@ img {
   .home-page .navbar-brand img {
     width: 90px; }
   .home-page .header {
-    padding-top: 92px; }
-  .home-page .best-service__info h6 {
-    font-size: 14px; } }
+    padding-top: 92px; } }
+
+@media only screen and (max-width: 1200px) {
+  .home-page .best-service__nav li {
+    flex-basis: 25%;
+    margin-bottom: 10px; }
+  .home-page .best-service__info-images {
+    padding: 0; } }
 
 @media only screen and (max-width: 992px) {
   .home-page .navbar {
@@ -14035,22 +14034,13 @@ img {
     padding: 35px 0 100px 0; }
     .home-page .contact__3 form {
       width: 100%; }
-  .home-page .best-service__info {
-    position: unset; }
-    .home-page .best-service__info img {
-      position: absolute;
-      top: 25px;
-      right: 25px; }
-    .home-page .best-service__info h6 {
-      position: absolute;
-      top: 88%;
-      left: 0;
-      right: 0;
-      border-radius: 4px;
-      background-color: #0091ae;
-      color: #fff;
-      padding: 12px 20px;
-      width: 80%;
-      margin: auto; }
-  .home-page .best-service .swiper-best-service-pagination {
-    margin-top: 60px; } }
+  .home-page .best-service__nav {
+    margin-bottom: 30px; }
+    .home-page .best-service__nav .nav-link {
+      font-size: 13px;
+      padding: 4px 10px; }
+  .home-page .best-service__image {
+    margin-bottom: 30px; }
+  .home-page .best-service__info h6 {
+    margin-bottom: 15px;
+    font-size: 21px; } }
