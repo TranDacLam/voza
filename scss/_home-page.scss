@@ -871,4 +871,19 @@
             transform:rotate(360deg)
         }
     }
+
+    .animated{
+        &.delay-0-2s{
+            animation-delay: .2s;
+        }
+        &.delay-0-7s{
+            animation-delay: .7s;
+        }
+        &.delay-1-2s{
+            animation-delay: 1.2s;
+        }
+        &.delay-2-8s{
+            animation-delay: 2.8s;
+        }
+    }
 }
