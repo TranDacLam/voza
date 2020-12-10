@@ -13720,6 +13720,18 @@ img {
   100% {
     transform: rotate(360deg); } }
 
+.home-page .animated.delay-0-2s {
+  animation-delay: .2s; }
+
+.home-page .animated.delay-0-7s {
+  animation-delay: .7s; }
+
+.home-page .animated.delay-1-2s {
+  animation-delay: 1.2s; }
+
+.home-page .animated.delay-2-8s {
+  animation-delay: 2.8s; }
+
 /* Extra small devices (phones, 600px and down) */
 /* Small devices (portrait tablets and large phones, 600px and up) */
 /* Medium devices (landscape tablets, 768px and up) */
